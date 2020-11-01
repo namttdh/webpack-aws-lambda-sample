@@ -1,0 +1,30 @@
+{
+  "name": "webpack-aws-lambda-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm run build:dev && (webpack --config build/webpack.dev.js --watch & nodemon dist/bundle.dev.js -q)",
+    "build:prod": "webpack --config build/webpack.prod.js --display-modules",
+    "build:dev": "webpack --config build/webpack.dev.js",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --quiet --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/faker": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "faker": "^4.1.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "ts-loader": "^8.0.4",
+    "typescript": "^3.9.6",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
