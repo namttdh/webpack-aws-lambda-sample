@@ -5,6 +5,7 @@ This project build for support typescript.
 Prop:
 - Only 1 file (bundle.js)
 - Ez to manage source code and testing
+- Support typescipt and dynamic alias, just edit in `tsconfig.json`
 
 Cons:
 - Not working with several package with native modules like: Sharp with libvip, bcrypt,... But have some simalar package without any native modules like Jimp, BcryptJs
